@@ -4,17 +4,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class CalculadoraClientSocket {
+public class CalculadoraClientSocket 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+    {
 		
 		// TODO Auto-generated method stub
 		double oper1=10,oper2=20;
 		int operacao=1; //1-somar 2-subtrair 3-dividir 4-multiplicar
 		String result="";
-        try {
+        try 
+        {
 
-        	//Conexão com o Servidor
+        	//Conexï¿½o com o Servidor
             Socket clientSocket = new Socket("192.168.0.11", 9090);
             DataOutputStream socketSaidaServer = new DataOutputStream(clientSocket.getOutputStream());
             
@@ -32,7 +35,10 @@ public class CalculadoraClientSocket {
             System.out.println("resultado="+result);
             clientSocket.close();
 
-        } catch (IOException e) {
+        } 
+        
+        catch (IOException e) 
+        {
             e.printStackTrace();
         }
 
