@@ -51,7 +51,6 @@ public class CalculadoraServerSocket {
 				
 				else if (op == 3) 
 				{
-	            	// Verifica divisão por zero
 	            	if (valor2 == 0) 
 					{
 	            		result = "Erro: divisão por zero";
