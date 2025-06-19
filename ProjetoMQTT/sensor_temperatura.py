@@ -12,4 +12,4 @@ while True:
     payload = f"{sensor_id}:{temperatura:.2f}"
     client.publish("temperatura/leitura", payload)
     print(f"Enviado: {payload}")
-    time.sleep(60)  # a cada 60 segundos
+    time.sleep(60)  # a cada 1 min
